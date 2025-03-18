@@ -3,7 +3,7 @@ import type { Schema } from "../amplify/data/resource";
 import { useAuthenticator } from '@aws-amplify/ui-react';
 import { generateClient } from "aws-amplify/data";
 
-const client = generateClient<Schema>();
+const client = generateClient<Schema>();  
 
 function App() {
   const { user, signOut } = useAuthenticator();
@@ -37,7 +37,7 @@ function App() {
         ))}
       </ul>
       <div>
-        🥳 App successfully hosted.
+        🥳 App successfully hosted. Yay!
       </div>
       <button onClick={signOut}>Sign out</button>
     </main>
