@@ -6,7 +6,7 @@ import { generateClient } from "aws-amplify/data";
 const client = generateClient<Schema>();  
 
 function App() {
-  const { user, signOut } = useAuthenticator();
+  const { signOut } = useAuthenticator();
   const [searchQuery, setSearchQuery] = useState("");
   const [items, setItems] = useState<Array<Schema["SearchableItem"]["type"]>>([]);
   const [filteredItems, setFilteredItems] = useState<Array<Schema["SearchableItem"]["type"]>>([]);
