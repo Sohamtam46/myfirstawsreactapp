@@ -37,7 +37,7 @@ function App() {
         ))}
       </ul>
       <div>
-        🥳 App successfully hosted. Yay!
+        🥳 App successfully hosted. Yay! I have made a new change!
       </div>
       <button onClick={signOut}>Sign out</button>
     </main>
